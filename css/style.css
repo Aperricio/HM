@@ -65,23 +65,26 @@ h1, h2, h3, p {
     }
 }
 
-@media ( max-width: 653px ) {
-    .hero h1, .hero h2 {
-        text-align: center;
-    }
-}
-
 .hero {
     display: table-cell;
     width: 100vw;
     height: 100vh;
     background-image: url(../img/chica.webp);
     background-size: cover;
-    /*background-attachment: fixed;*/
     background-position: left;
     text-align: right;
     vertical-align: middle;
     position: relative;
     z-index: -1;
+}
+
+@media ( max-width: 653px ) {
+    .hero h1, .hero h2 {
+        text-align: center;
+    }
+
+    .hero {
+        background-position-x: -150px;
+    }
 }
 
