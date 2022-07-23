@@ -27,22 +27,22 @@ h1, h2, h3, p {
 }
 
 #h1hero {
-    color: black;
+    color: cyan;
     font-family: "Monoton", cursive;
     font-weight: 100;
     font-size: 6rem;
     padding: 30px;
-    text-shadow: 1.2px 1.2px 0px cyan;
+    text-shadow: 1.2px 1.2px 0px black;
 
 }
 
 #h2hero {
-    color: black;
+    color: magenta;
     font-family: "Monoton", cursive;
     font-weight: 100;
     font-size: 3rem;
     padding: 0px 30px;
-    text-shadow: 1px 1px 0px magenta;
+    text-shadow: 1px 1px 0px black;
 }
 
 .hero {
