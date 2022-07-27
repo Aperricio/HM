@@ -4,12 +4,58 @@
     box-sizing: border-box;
 }
 
-:root {
-    scroll-behavior: smooth;
-    resize: vertical;
-    --color1: cyan;
-    --color2: yellow;
-    --color3: magenta;
+@keyframes entradaIzquierda {
+    from { 
+        left: -1900px; 
+    }
+    to   { 
+        left: 0px; 
+    }
+}
+
+@-moz-keyframes entradaIzquierda {
+    from { 
+        left: -1900px; 
+    }
+    to   { 
+        left: 0px; 
+    }
+}
+
+@-webkit-keyframes entradaIzquierda {
+    from { 
+        left: -1900px; 
+    }
+    to   { 
+        left: 0px; 
+    }
+}
+
+@keyframes entradaArriba {
+    from { 
+        top: -1900px; 
+    }
+    to   { 
+        top: 0; 
+    }
+}
+
+@-moz-keyframes entradaArriba {
+    from { 
+        right: -1900px; 
+    }
+    to   { 
+        right: 0px; 
+    }
+}
+
+@-webkit-keyframes entradaArriba {
+    from { 
+        right: -1900px; 
+    }
+    to   { 
+        right: 0px; 
+    }
 }
 
 @font-face {
@@ -27,22 +73,29 @@ h1, h2, h3, p {
 }
 
 .hero h1 {
+    position: relative;
     color: cyan;
     font-family: "Monoton", cursive;
     font-weight: 100;
     font-size: 6rem;
     padding: 30px;
     text-shadow: 1.2px 1.2px 0px black;
-
+    -moz-animation: entradaArriba 1s;
+    -webkit-animation: entradaArriba 1s;
+    animation: entradaArriba 1s;
 }
 
 .hero h2 {
+    position: relative;
     color: magenta;
     font-family: "Monoton", cursive;
     font-weight: 100;
     font-size: 3rem;
     padding: 0px 30px;
     text-shadow: 0.5px 0.5px 0px black;
+    -moz-animation: entradaIzquierda 1s;
+    -webkit-animation: entradaIzquierda 1s;
+    animation: entradaIzquierda 1s;
 }
 
 @media ( max-width: 950px ) {
