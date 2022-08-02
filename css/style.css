@@ -182,8 +182,34 @@ article.texto:nth-child(3) {
     font-size: 1.5rem;
    /* display: flex;
     flex-direction: row;*/
-    max-width: 550px;
+    max-width: 350px;
     min-width: 30vw;
+    position: relative;
+    left: 150px;
+}
+
+@media (max-width: 500px) {
+    article.texto:nth-child(3) {
+        left: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    article.texto:nth-child(3) {
+        left: 70px;
+    }
+}
+
+@media (max-width: 421px) {
+    article.texto:nth-child(3) {
+        left: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    article.texto:nth-child(3) {
+        position: static;
+    }
 }
 
 article.texto:nth-child(4), article.texto:nth-child(5) {
