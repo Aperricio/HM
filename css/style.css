@@ -6,55 +6,61 @@
 
 @keyframes entradaIzquierda {
     from { 
-        left: -1900px; 
+        transform: translateX(-500px); 
+        opacity: 0;
     }
     to   { 
-        left: 0px; 
+        opacity: 1; 
     }
 }
 
 @-moz-keyframes entradaIzquierda {
     from { 
-        left: -1900px; 
+        transform: translateX(-500px); 
+        opacity: 0;
     }
     to   { 
-        left: 0px; 
+        opacity: 1; 
     }
 }
 
 @-webkit-keyframes entradaIzquierda {
     from { 
-        left: -1900px; 
+        transform: translateX(-500px); 
+        opacity: 0;
     }
     to   { 
-        left: 0px; 
+        opacity: 1; 
     }
 }
 
 @keyframes entradaArriba {
     from { 
-        top: -1000px; 
+        transform: translateY(-500px); 
+        opacity: 0;
     }
     to   { 
-        top: 0; 
+        opacity: 1; 
     }
 }
 
 @-moz-keyframes entradaArriba {
     from { 
-        right: -1000px; 
+        transform: translateY(-500px); 
+        opacity: 0;
     }
     to   { 
-        right: 0px; 
+        opacity: 1; 
     }
 }
 
 @-webkit-keyframes entradaArriba {
     from { 
-        right: -1000px; 
+        transform: translateY(-500px); 
+        opacity: 0;
     }
     to   { 
-        right: 0px; 
+        opacity: 1; 
     }
 }
 
@@ -68,8 +74,12 @@ body {
     background-color: black;
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
     padding: 30px;
+}
+
+p {
+    padding: 10px 30px;
 }
 
 .hero h1 {
@@ -139,5 +149,24 @@ h1, h2, h3, p {
     .hero {
         background-position-x: -150px;
     }
+}
+
+.titulares {
+    background-color: magenta;
+    font-family: "Monoton", cursive;
+    font-weight: 100;
+    clip-path: ellipse(170px 90px at 10% 1%);
+}
+
+.negritaamarillo {
+    color: yellow;
+    font-weight: 900;
+}
+
+article.texto {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    min-width: 30vw;
 }
 
