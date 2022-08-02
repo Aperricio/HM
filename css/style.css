@@ -182,8 +182,8 @@ article.texto:nth-child(3) {
     font-size: 1.5rem;
    /* display: flex;
     flex-direction: row;*/
-    max-width: 350px;
-    min-width: 30vw;
+    min-width: 10vw;
+    width: 350px;
     position: relative;
     left: 150px;
 }
