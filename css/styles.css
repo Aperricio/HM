@@ -139,8 +139,8 @@ p {
   font-size: 6rem;
   padding: 30px;
   text-shadow: 1.2px 1.2px 0px black;
-  -webkit-animation: entradaArriba 1s;
-          animation: entradaArriba 1s;
+  -webkit-animation: entradaArriba 2s;
+          animation: entradaArriba 2s;
 }
 .hero h2 {
   position: relative;
@@ -150,8 +150,8 @@ p {
   font-size: 3rem;
   padding: 0px 30px;
   text-shadow: 0.5px 0.5px 0px black;
-  -webkit-animation: entradaIzquierda 1s;
-          animation: entradaIzquierda 1s;
+  -webkit-animation: entradaIzquierda 2s;
+          animation: entradaIzquierda 2s;
 }
 
 @media (max-width: 950px) {
