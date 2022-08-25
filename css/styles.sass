@@ -35,6 +35,21 @@
     to    
         top: 0 
 
+@include keyframes (zoomIn)
+    0% 
+        transform: scale(1)
+        opacity: 0
+
+    5% 
+        transform: scale(1)
+        opacity: 0
+    6%
+        transform: scale(0)
+        opacity: 0
+    90%
+        transform: scale(1)
+        opacity: 1
+
 
 
 /*Scrollbar
@@ -76,6 +91,7 @@ p
     vertical-align: middle
     position: relative
     z-index: -1
+    animation: zoomIn 0.5s
     h1
         position: relative
         color: cyan
