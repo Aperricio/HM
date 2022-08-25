@@ -18,22 +18,31 @@
    @keyframes #{$name} 
      @content
 
-
-@include keyframes(entradaIzquierda)
-     from 
-        left: -1500px
-        opacity: 0
-    
-     to    
-        left: 0
-
 @include keyframes (entradaArriba)
-    from 
+    0% 
         top: -500px 
         opacity: 0
     
-    to    
-        top: 0 
+    80%    
+        top: -500px
+        opacity: 0
+
+    100%
+        top: 0
+        opacity: 1
+
+@include keyframes(entradaIzquierda)
+     0% 
+        left: -1500px
+        opacity: 0
+    
+     85%    
+        left: -1500px
+        opacity: 0
+        
+     100%
+        left: 0
+        opacity: 1
 
 @include keyframes (zoomIn)
     0% 
@@ -91,7 +100,7 @@ p
     vertical-align: middle
     position: relative
     z-index: -1
-    animation: zoomIn 0.5s
+    animation: zoomIn 1s
     h1
         position: relative
         color: cyan
@@ -100,7 +109,7 @@ p
         font-size: 6rem
         padding: 30px
         text-shadow: 1.2px 1.2px 0px black
-        animation: entradaArriba 2s
+        animation: entradaArriba 3s
     h2
         position: relative
         color: magenta
@@ -109,7 +118,7 @@ p
         font-size: 3rem
         padding: 0px 30px
         text-shadow: 0.5px 0.5px 0px black
-        animation: entradaIzquierda 2s
+        animation: entradaIzquierda 4s
       
 
 @media ( max-width: 950px ) 

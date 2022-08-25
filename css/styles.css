@@ -10,40 +10,60 @@
   src: url("../fonts/Monoton-Regular.ttf") format("woff2");
 }
 /*Animaciones */
-@-webkit-keyframes entradaIzquierda {
-  from {
-    left: -1500px;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-  }
-}
-@keyframes entradaIzquierda {
-  from {
-    left: -1500px;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-  }
-}
 @-webkit-keyframes entradaArriba {
-  from {
+  0% {
     top: -500px;
     opacity: 0;
   }
-  to {
+  80% {
+    top: -500px;
+    opacity: 0;
+  }
+  100% {
     top: 0;
+    opacity: 1;
   }
 }
 @keyframes entradaArriba {
-  from {
+  0% {
     top: -500px;
     opacity: 0;
   }
-  to {
+  80% {
+    top: -500px;
+    opacity: 0;
+  }
+  100% {
     top: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes entradaIzquierda {
+  0% {
+    left: -1500px;
+    opacity: 0;
+  }
+  85% {
+    left: -1500px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes entradaIzquierda {
+  0% {
+    left: -1500px;
+    opacity: 0;
+  }
+  85% {
+    left: -1500px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
   }
 }
 @-webkit-keyframes zoomIn {
@@ -128,8 +148,8 @@ p {
   vertical-align: middle;
   position: relative;
   z-index: -1;
-  -webkit-animation: zoomIn 0.5s;
-          animation: zoomIn 0.5s;
+  -webkit-animation: zoomIn 1s;
+          animation: zoomIn 1s;
 }
 .hero h1 {
   position: relative;
@@ -139,8 +159,8 @@ p {
   font-size: 6rem;
   padding: 30px;
   text-shadow: 1.2px 1.2px 0px black;
-  -webkit-animation: entradaArriba 2s;
-          animation: entradaArriba 2s;
+  -webkit-animation: entradaArriba 3s;
+          animation: entradaArriba 3s;
 }
 .hero h2 {
   position: relative;
@@ -150,8 +170,8 @@ p {
   font-size: 3rem;
   padding: 0px 30px;
   text-shadow: 0.5px 0.5px 0px black;
-  -webkit-animation: entradaIzquierda 2s;
-          animation: entradaIzquierda 2s;
+  -webkit-animation: entradaIzquierda 4s;
+          animation: entradaIzquierda 4s;
 }
 
 @media (max-width: 950px) {
